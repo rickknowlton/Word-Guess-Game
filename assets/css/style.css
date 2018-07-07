@@ -1,0 +1,21 @@
+body {
+    padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+.card {
+    height: 100%;
+}
+
+p.lettersGuessed {
+    text-align: left;
+}
+
+.letters {
+    letter-spacing: 7px;
+}
