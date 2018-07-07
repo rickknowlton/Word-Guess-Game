@@ -1,6 +1,11 @@
 //------------------------------------------//
 //              Game Variables              //
 //------------------------------------------//
+// Global variables are defined, including  //
+// an empty array to catch wrong guesses    //
+// and our preset game status values.       //
+//------------------------------------------//
+
 
 var word;
 var magicWord;
@@ -18,12 +23,22 @@ var losing = false;
 //------------------------------------------//
 //               Load Welcome               //
 //------------------------------------------//
+// This simply hides our "game" window from //
+// the user as they come to our page.       //
+//------------------------------------------//
 
 $('#game').hide();
 
 
 //------------------------------------------//
 //             Win/Loss Actions             //
+//------------------------------------------//
+// When a win or loss is triggered, these   //
+// functions are designed to display an     //
+// alert message in the form of a slider.   //
+// It shows the user the correct word, the  //
+// amount of guesses used and of course if  //
+// they won or lost.                        //
 //------------------------------------------//
 
 function gameWin() {
@@ -32,7 +47,7 @@ function gameWin() {
     wins += 1;
     var taken = 12 - guesses;
     $('#wins').html(wins);
-    $('#winner').html("<div class='win-display my-4'> <div class='win-slider'> <div class='row win-slider-header'> <div class='col-lg-12'> <div class='card'> <div class='card-header win-header bg-success'> <h1>Winner!</h1> </div> <div class='card-body'> <h2>You guessed the word correctly.</h2> <h3>Magic Word: <span id='currentWord'>" + magicWord.word + "</span> </h3> <h3>Guesses: <span id='currentWord'>" + taken + "</span> </h3> </div> <div class='card-footer'> <div class='row'> <div class='col-lg-12'> <p class='card-footer-text'>Press any key to continue...</p> </div> </div> </div> </div> </div> </div> </div> </div>");
+    $('#winner').html("<div class='win-display my-4'> <div class='win-slider'> <div class='row win-slider-header'> <div class='col-lg-12'> <div class='card'> <div class='card-header'> <h1>Winner!</h1> </div> <div class='card-body'> <h2>You guessed the word correctly.</h2> <h3>Magic Word: <span id='currentWord'>" + magicWord.word + "</span> </h3> <h3>Guesses: <span id='currentWord'>" + taken + "</span> </h3> </div> <div class='card-footer'> <div class='row'> <div class='col-lg-12'> <p class='card-footer-text'>Press any key to continue...</p> </div> </div> </div> </div> </div> </div> </div> </div>");
     $('#winner').slideDown("slow");
 }
 
