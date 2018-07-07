@@ -19,3 +19,8 @@ p.lettersGuessed {
 .letters {
     letter-spacing: 7px;
 }
+
+.win-header {
+    background-color: #80ff80;
+    color: white;
+}

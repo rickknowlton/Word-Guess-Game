@@ -10,10 +10,10 @@
 
   <title>Word Guess Game</title>
 
-  <!-- Favicon -->
+  <!--== Favicon ==-->
   <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico">
 
-  <!-- CSS Files -->
+  <!--== CSS Files ==-->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
   <link href="./assets/css/style.css" rel="stylesheet">
 
@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  <!-- Welcome Content -->
+  <!--== Welcome Content ==-->
 
   <div class="container" id="welcome">
     <div class="row text-center">
@@ -32,10 +32,8 @@
             <h2>Guess the Word</h2>
           </div>
           <div class="card-body">
-            <h4>
-              Press any key to get started...
-            </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+            <h4>Press any key to get started...</h4>
+            <p class="card-text">You have 12 tries to correctly guess the word!</p>
           </div>
           <div class="card-footer">
             <div class="row">
@@ -48,19 +46,20 @@
   </div>
   </div>
 
-  <!-- Game Content -->
+  <!--== Game Content ==-->
   <div class="container" id="game">
 
-    <!-- Header -->
+    <!--== Header ==-->
     <header class="jumbotron">
       <h1 class="display-3">Word Guess Game</h1>
+      <p class="instructions">You have twelve tries to correctly guess the word! Use your keyboard to play the game.</p>
     </header>
 
     <div id="winner" style="display: none;"></div>
     <div id="loser" style="display: none;"></div>
 
 
-    <!-- Game Features -->
+    <!--== Game Features ==-->
     <div class="row text-center">
       <div class="col-lg-6 col-md-6 mb-4">
         <div class="card">
@@ -71,7 +70,6 @@
             <h4>
               <span class="letters" id="letters-word"></span>
             </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
           </div>
           <div class="card-footer">
             <div class="row">
@@ -124,7 +122,7 @@
 
 
 
-  <!-- Javascript Files -->
+  <!--== Javascript Files ==-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
